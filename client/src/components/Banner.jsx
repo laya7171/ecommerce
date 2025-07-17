@@ -5,7 +5,7 @@ import banner from "../../public/banner_bg_robo.png"
 export default function Banner() {
   return (
     <>
-    <div >
+    <div className='mt-14'>
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
     <div className='w-full md:w-1/2 md:mt-38 mt-12'>
        <div className='space-y-12'>
