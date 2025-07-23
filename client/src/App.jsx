@@ -1,19 +1,17 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
-import Navbar  from './components/navbar.jsx'
-import Banner from './components/Banner.jsx'
-import Footer from './components/footer.jsx'
-import FreeCourse from './components/FreeCourse.jsx'
+import Home from './home/home.jsx'
+import {Routes, Route} from 'react-router-dom'
+import Courses_pg from './Courses/Courses_pg.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Banner />
-      <FreeCourse />
-      <Footer />
-    </BrowserRouter>
+   <>
+   <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/Paid_courses" element={<Courses_pg/>} />
+   </Routes>
+   </>
   )
 }
 
